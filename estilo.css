@@ -1,0 +1,124 @@
+body {
+    background-color: #e4ca9e;
+    font-family: monospace;
+    max-width: 1000px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    padding: 50px;
+    width: 100%;
+}
+
+h1 {
+    text-align: center;
+    color: #854937;
+}
+
+p {
+    font-size: larger;
+    justify-content: center;
+    text-align: left;
+    text-indent: 20px;
+}
+
+img {
+    border-radius: 10px;
+    margin: 10px;
+}
+
+a, button {
+    cursor: pointer;
+}
+
+/* ==================== Mensagem ====================*/
+
+#mensagem {
+    opacity: 0%;
+    pointer-events: none;
+    transition: opacity 0.5s ease-in-out;
+}
+
+#mensagem.mostrar {
+    opacity: 1;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    background-color: antiquewhite;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 15px 15px 15px black;
+    font-weight: bold;
+}
+
+/* ==================== Botão que exibe a mensagem ====================*/
+
+#botaoMensagem {
+    background-color: antiquewhite;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px black;
+    font-family: monospace;
+    transition: transform 0.2s ease;
+}
+
+#botaoMensagem:hover {
+    transform: scale(1.05);
+    font-weight: bolder;
+}
+
+/* ==================== Lista e imagem de um hobby ====================*/
+ul, li {
+    margin-bottom: 10px;
+    place-items: left;
+}
+
+.imagemComputador {
+    width: 400px;
+    margin: 0px;
+    margin-bottom: 20px;
+    box-shadow: 20px 20px 20px black;
+}
+
+/* ==================== Tabela  ====================*/
+
+table {
+    background-color: antiquewhite;
+    text-align: center;
+    box-shadow: 20px 20px 20px black;
+    border-radius: 10px;
+    border: 1px solid black;
+    border-collapse: separate;
+}
+
+td:not(:last-child) {
+    text-align: center;
+    vertical-align: middle;
+    padding: 5px;
+    border-right: 1px solid black;
+}    
+
+tr:not(:last-child) td {
+    border-bottom: 1px solid black;
+}
+
+
+/*~~~~~~~~ Imagens dentro da tabela ~~~~~~~~*/
+
+.suecia, .noruega, .japao {
+    width: 200px;
+}
+
+/* ==================== Estilização do link ====================*/
+
+a {
+    color: blue;
+    margin-top: 40px;
+    display: inline-block;
+    transition: transform 0.2s ease, color 0.2s ease;
+    text-indent: 5px;
+}
+
+a:hover{
+    color: red;
+    transform: scale(1.05);
+    font-weight: bolder;
+}
